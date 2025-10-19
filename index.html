@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Responsive Webpage</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Services ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Web Design</a>
+            <a href="#">Maintenance</a>
+            <a href="#">Consulting</a>
+          </div>
+        </li>
+        <li><a href="#" id="openModalBtn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>Welcome!</h2>
+      <p>This webpage automatically adjusts its layout for desktops, tablets, and mobile devices.</p>
+      <p>Resize your browser to see how the layout changes. You can also click “Contact” to see a modal popup.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Responsive Website | All Rights Reserved</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <p>Email: info@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
